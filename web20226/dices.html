@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dices</title>
+<link rel="stylesheet" href="dicestyle.css">
+</head>
+
+<body>
+    <header>
+        <h1>Roll Some Dice</h1>
+    </header>
+    <img src="pic_panther-dnd-6902871.jpg" alt="Dice" height="125" width="150">
+    
+<div class="container">
+    <h1>Roll Dice 6 Side 🎲</h1>
+    <div class="dice-container">
+        <div class="dice">
+            <h2>Dice 1 6 sides </h2>
+            <div class="result" id="dice1"></div>
+            Dice Roll:<input type="text" id="dice1" value="1">
+            <button onclick="rollDice6()">Try it</button>
+    <script>
+        function rollDice6()
+        {
+            var dice1 = Math.floor((Math.random() * 6) +1);//random
+            document.getElementById("dice1").value=dice1;
+        }
+    </script>  
+
+        </div> 
+
+    </div>
+
+</div>
+<div class="dice">
+            <h2>Dice 2 10 sides </h2>
+            <div class="result" id="dice2"></div>
+            Dice Roll:<input type="text" id="dice2" value="2">
+            <button onclick="rollDice10()">Try it</button>
+    <script>
+        function rollDice10()
+        {
+            var dice1 = Math.floor((Math.random() * 10) +1);//random
+            document.getElementById("dice2").value=dice1;
+        }
+    </script>  
+
+</div>
+<div class="dice">
+            <h2>Dice 3 14 sides </h2>
+            <div class="result" id="dice3"></div>
+            Dice Roll:<input type="text" id="dice3" value="3">
+            <button onclick="rollDice14()">Try it</button>
+    <script>
+        function rollDice14()
+        {
+            var dice1 = Math.floor((Math.random() * 14) +1);//random
+            document.getElementById("dice3").value=dice1;
+        }
+    </script>  
+
+</div>
+    
+
+
+</body>
+</html>

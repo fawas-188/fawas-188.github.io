@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#0ea5e9);
+    font-family:Arial, sans-serif;
+    color:white;
+}
+
+h1{
+    font-size:4rem;
+    margin-bottom:30px;
+    text-shadow:0 0 10px white,
+                0 0 20px #00e5ff;
+}
+
+.dice-container{
+    display:flex;
+    gap:50px;
+    margin-bottom:30px;
+}
+
+.dice{
+    font-size:120px;
+}
+
+.roll-left{
+    animation:rollLeft 1s ease;
+}
+
+.roll-right{
+    animation:rollRight 1s ease;
+}
+.roll-topright {
+    animation: rollcenter 1s ease;
+}
+
+@keyframes rollLeft{
+    0%{
+        transform:rotate(0deg) scale(1);
+    }
+    50%{
+        transform:rotate(360deg) scale(1.3);
+    }
+    100%{
+        transform:rotate(720deg) scale(1);
+    }
+}
+
+@keyframes rollRight{
+    0%{
+        transform:rotate(0deg) scale(1);
+    }
+    50%{
+        transform:rotate(-360deg) scale(1.3);
+    }
+    100%{
+        transform:rotate(-720deg) scale(1);
+    }
+}
+
+button{
+    padding:15px 35px;
+    font-size:1.2rem;
+    font-weight:bold;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    background:linear-gradient(45deg,#00e5ff,#8b5cf6);
+    color:white;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #00e5ff;
+}
+
+button:active{
+    transform:scale(0.95);
+}
