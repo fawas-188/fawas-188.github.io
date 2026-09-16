@@ -104,7 +104,16 @@ input[type=email] {
     border: 1px solid aqua;
     border-radius: 25px;
     box-sizing: border-box;
-}    
+} 
+input[type=password] {
+    width:25%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid aqua;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
 input[type=submit] {
     background-color: aquamarine;
     border: solid gold;
@@ -114,6 +123,12 @@ input[type=submit] {
     margin: 8px 2px;
     cursor: grabbing;
 
+}
+form{
+    font-size:medium;
+    margin-bottom:30px;
+    text-shadow:0 0 10px white,
+                0 0 20px #00e5ff;
 }
 textarea{
     width: 75%;
